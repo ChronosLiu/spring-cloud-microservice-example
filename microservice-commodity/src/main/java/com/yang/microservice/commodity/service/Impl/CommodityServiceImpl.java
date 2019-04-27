@@ -8,6 +8,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.Optional;
 
 @Service
@@ -23,6 +24,8 @@ public class CommodityServiceImpl implements CommodityService {
            TCommodity commodity = commodityOptional.get();
            CommodityDto dto = new CommodityDto();
            BeanUtils.copyProperties(commodity,dto);
+           commodity.setCreatedTime(new Date());
+           commodity.setModifyTime(new Date());
            return  dto;
         }
         return null;
