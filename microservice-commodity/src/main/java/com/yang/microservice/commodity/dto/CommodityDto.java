@@ -2,6 +2,7 @@ package com.yang.microservice.commodity.dto;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
@@ -50,4 +51,12 @@ public class CommodityDto {
      * 商品启用状态（true:启用，false:下架）
      */
     private Boolean enable;
+    /**
+     * 商品售卖价
+     */
+    private BigDecimal sellingPrice;
+    /**
+     * 商品原价
+     */
+    private BigDecimal originPrice;
 }

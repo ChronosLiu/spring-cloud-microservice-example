@@ -1,6 +1,7 @@
 package com.yang.microservice.commodity.controller;
 
 import com.yang.microservice.commodity.dto.CommodityDto;
+import com.yang.microservice.commodity.dto.CommodityPriceDto;
 import com.yang.microservice.commodity.service.CommodityService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -25,5 +26,6 @@ public class CommodityController {
     public CommodityDto findById(@PathVariable Integer id){
         return this.commodityService.findById(id);
     }
+
 
 }
