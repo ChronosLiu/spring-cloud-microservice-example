@@ -26,3 +26,8 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
   instance:
     prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'hystrix.stream'
