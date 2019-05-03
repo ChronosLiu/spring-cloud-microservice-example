@@ -12,7 +12,7 @@ spring:
       max-active: 60
       initial-size: 20
       max-wait: 30000
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
     generate-ddl: false
