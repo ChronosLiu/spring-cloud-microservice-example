@@ -31,3 +31,4 @@ microservice-eureka-server/.gitignore
 microservice-commodity/.gitignore
 microservice-commodity-price/.gitignore
 microservice-hystrix-dashboard/.gitignore
+microservice-hystrix-turbine/.gitignore

@@ -1,0 +1,16 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: microservice-hystrix-tuibine
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: microservice-commodity
+  cluster-name-expression: "'default'"
