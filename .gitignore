@@ -32,3 +32,4 @@ microservice-commodity/.gitignore
 microservice-commodity-price/.gitignore
 microservice-hystrix-dashboard/.gitignore
 microservice-hystrix-turbine/.gitignore
+microservice-gateway-zuul/.gitignore
